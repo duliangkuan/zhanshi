@@ -1,0 +1,218 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--theme-text);
+  background: var(--theme-gradient);
+  min-height: 100vh;
+  transition: all 0.5s ease;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* 主题色彩变量 */
+:root {
+  /* 默认主题变量 */
+  --theme-primary: #1a1a2e;
+  --theme-secondary: #16213e;
+  --theme-accent: #0f3460;
+  --theme-highlight: #533483;
+  --theme-text: #ffffff;
+  --theme-text-secondary: #b8c5d6;
+  --theme-gradient: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%);
+  --theme-card-bg: rgba(255, 255, 255, 0.1);
+  --theme-card-border: rgba(83, 52, 131, 0.3);
+  --theme-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --theme-shadow-hover: 0 20px 40px rgba(83, 52, 131, 0.2);
+  
+  /* 卡片专用变量 */
+  --card-background: rgba(26, 26, 46, 0.9);
+  --card-text: #ffffff;
+  --card-text-secondary: #b8c5d6;
+  --card-icon-bg: linear-gradient(135deg, #533483, #0f3460);
+  --card-button-bg: linear-gradient(135deg, #4facfe, #00f2fe);
+  --card-button-text: #ffffff;
+  
+  /* 兼容性变量 */
+  --primary-blue: #4A90E2;
+  --primary-green: #7ED321;
+  --primary-orange: #F5A623;
+  --primary-red: #D0021B;
+  --text-dark: #2C3E50;
+  --text-light: #7F8C8D;
+  --white: #FFFFFF;
+  --shadow: var(--theme-shadow);
+  --shadow-hover: var(--theme-shadow-hover);
+}
+
+/* 通用按钮样式 */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, var(--primary-blue), #5BA0F2);
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* 卡片样式 */
+.card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-blue), var(--primary-green));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* 加载动画 */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid var(--primary-blue);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 呼吸灯效果 */
+.breathing {
+  animation: breathing 2s ease-in-out infinite;
+}
+
+@keyframes breathing {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+    margin: 8px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3A7BC8;
+}
+
+/* 主题动画效果 */
+@keyframes star-twinkle {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
+@keyframes poetry-flow {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
+@keyframes wave-motion {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
+/* 主题背景动画 */
+body.star-ocean {
+  background-size: 400% 400%;
+  animation: star-twinkle 15s ease infinite;
+}
+
+body.poetry-distance {
+  background-size: 400% 400%;
+  animation: poetry-flow 12s ease infinite;
+}
+
+body.sail-away {
+  background-size: 400% 400%;
+  animation: wave-motion 10s ease infinite;
+}

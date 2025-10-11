@@ -1,0 +1,29 @@
+{
+  "name": "smart-learning-companion",
+  "version": "1.0.0",
+  "description": "智慧学伴：核心知识+AI辅助 - 教育部项目展示网站",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4",
+    "animate.css": "^4.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  },
+  "keywords": [
+    "education",
+    "ai",
+    "writing-assistant",
+    "vocational-education"
+  ],
+  "author": "教育部项目组",
+  "license": "MIT"
+}
