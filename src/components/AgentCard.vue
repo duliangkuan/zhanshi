@@ -6,12 +6,21 @@
   >
     <div class="card-header">
       <div class="agent-icon breathing">
+        <!-- 优先显示图片路径的图标 -->
         <img 
-          v-if="getCustomIcon(agent.id)" 
+          v-if="isImageIcon(agent.icon)" 
+          :src="agent.icon" 
+          :alt="agent.name"
+          class="custom-icon-image"
+        />
+        <!-- 其次显示自定义上传的图标 -->
+        <img 
+          v-else-if="getCustomIcon(agent.id)" 
           :src="getCustomIcon(agent.id)" 
           :alt="agent.name"
           class="custom-icon-image"
         />
+        <!-- 最后显示 emoji -->
         <span v-else>{{ agent.icon }}</span>
       </div>
       <div class="agent-info">
@@ -51,6 +60,10 @@ export default {
     getCustomIcon(agentId) {
       const savedIcons = JSON.parse(localStorage.getItem('agentIcons') || '{}')
       return savedIcons[agentId] || null
+    },
+    isImageIcon(icon) {
+      // 检查是否是图片路径（以 / 或 http 开头）
+      return icon && (icon.startsWith('/') || icon.startsWith('http'))
     }
   }
 }
