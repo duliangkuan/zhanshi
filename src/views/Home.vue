@@ -95,7 +95,7 @@ export default {
         {
           id: 'yeyan',
           name: '业研',
-          description: '深耕专业学习，匹配实训报告、技术说明等场景，规范专业写作表达',
+          description: '深耕专业学习，匹配实训报告、技术说明等场景，规范专业写作',
           icon: '📊',
           color: '#7ED321',
           couziUrl: 'https://www.coze.cn/store/agent/7557379358193926194?bot_id=true',
@@ -103,7 +103,7 @@ export default {
         {
           id: 'bisheng',
           name: '毕胜',
-          description: '直击毕业求职，指导毕业论文、简历等文书，赋能毕业写作攻坚',
+          description: '直击毕业求职，指导毕业论文、简历等文书，赋能毕业写作',
           icon: '🚀',
           color: '#F5A623',
           couziUrl: 'https://www.coze.cn/store/agent/7557380401640751167?bot_id=true',
@@ -111,7 +111,7 @@ export default {
         {
           id: 'zhixing',
           name: '职行',
-          description: '立足职场攀升，优化工作邮件、总结等文书，提升职场写作实践能力',
+          description: '立足职场攀升，优化工作邮件、总结等文书，提升职场写作',
           icon: '💼',
           color: '#D0021B',
           couziUrl: 'https://www.coze.cn/store/agent/7557382020679794728?bot_id=true',
