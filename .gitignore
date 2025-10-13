@@ -35,3 +35,4 @@ lerna-debug.log*
 # 构建输出
 *.local
 
+.vercel

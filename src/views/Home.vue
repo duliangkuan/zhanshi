@@ -25,7 +25,7 @@
               智慧学伴
             </h2>
             <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
-              职业院校应用文写作教程 - 集成四个AI智能体，助力学生应用文写作能力全面提升
+              职业院校应用文写作教程 - 集成七个AI智能体，助力学生应用文写作能力全面提升
             </p>
           </div>
         </section>
