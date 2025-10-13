@@ -272,9 +272,12 @@ export default {
   font-size: 20px;
   color: var(--theme-text-secondary);
   margin-bottom: 40px;
-  max-width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
@@ -390,6 +393,12 @@ export default {
 }
 
 @media (max-width: 768px) {
+  .hero-subtitle {
+    white-space: normal;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  
   .book-cover {
     width: 200px;
     height: 267px;
