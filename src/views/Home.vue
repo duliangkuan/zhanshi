@@ -90,7 +90,7 @@ export default {
           description: '聚焦入学适应，拆解校园通知、学习计划等文书框架，启蒙基础写作',
           icon: '/images/agents/wenqi.png',
           color: '#4A90E2',
-          couziUrl: 'https://www.coze.cn/store/agent/7557378578971689001?bot_id=true',
+          couziUrl: 'https://www.coze.cn/store/agent/7579948399303802880?bot_id=true',
         },
         {
           id: 'yeyan',
@@ -98,7 +98,7 @@ export default {
           description: '深耕专业学习，匹配实训报告、技术说明等场景，规范专业写作',
           icon: '/images/agents/yeyan.png',
           color: '#7ED321',
-          couziUrl: 'https://www.coze.cn/store/agent/7557379358193926194?bot_id=true',
+          couziUrl: 'https://www.coze.cn/store/agent/7579946822404849664?bot_id=true',
         },
         {
           id: 'bisheng',
@@ -106,7 +106,7 @@ export default {
           description: '直击毕业求职，指导毕业论文、简历等文书，赋能毕业写作',
           icon: '/images/agents/bisheng.png',
           color: '#F5A623',
-          couziUrl: 'https://www.coze.cn/store/agent/7557380401640751167?bot_id=true',
+          couziUrl: 'https://www.coze.cn/store/agent/7579945606991953960?bot_id=true',
         },
         {
           id: 'zhixing',
@@ -114,7 +114,7 @@ export default {
           description: '立足职场攀升，优化工作邮件、总结等文书，提升职场写作',
           icon: '/images/agents/zhixing.png',
           color: '#D0021B',
-          couziUrl: 'https://www.coze.cn/store/agent/7557382020679794728?bot_id=true',
+          couziUrl: 'https://www.coze.cn/store/agent/7579950223896936474?bot_id=true',
         }
       ],
       projectAgents: [
@@ -124,7 +124,7 @@ export default {
           description: '适配学校职场写作全场景，经学情诊断明确短板，推送资源，帮助学生筹备素材',
           icon: '/images/agents/jiangdao.png',
           color: '#4A90E2',
-          couziUrl: 'https://www.coze.cn/store/agent/7558760650122887168?bot_id=true',
+          couziUrl: 'https://www.coze.cn/store/agent/7579953738237132806?bot_id=true',
         },
         {
           id: 'project-agent-2',
@@ -132,7 +132,7 @@ export default {
           description: '提供定制模板，规范语言术语，梳理写作逻辑，保障内容贴合应用文写作规范',
           icon: '/images/agents/jiangban.png',
           color: '#7ED321',
-          couziUrl: 'https://www.coze.cn/store/agent/7558765790455988274?bot_id=true',
+          couziUrl: 'https://www.coze.cn/store/agent/7579951346884378676?bot_id=true',
         },
         {
           id: 'project-agent-3',
@@ -140,7 +140,7 @@ export default {
           description: '构建"检测 - 反馈 - 提升"闭环，生成批改报告，提供训练建议，助力写作能力进阶',
           icon: '/images/agents/jiangjin.png',
           color: '#F5A623',
-          couziUrl: 'https://www.coze.cn/store/agent/7558869464281251894?bot_id=true',
+          couziUrl: 'https://www.coze.cn/store/agent/7579952158410407978?bot_id=true',
         }
       ]
     }
